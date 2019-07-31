@@ -1,5 +1,9 @@
 ### Fun Quiz
 
+## `npm install`
+
+Installs all the dependencies which are required to run you applization
+
 ## Available Scripts
 
 In the project directory, you can run:
