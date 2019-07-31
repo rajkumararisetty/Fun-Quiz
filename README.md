@@ -1,5 +1,9 @@
 ### Fun Quiz
 
+## Demo:
+```demo
+https://quiz-677b9.firebaseapp.com/
+```
 ## `npm install`
 
 Installs all the dependencies which are required to run you applization
