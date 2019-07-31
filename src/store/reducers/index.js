@@ -6,21 +6,26 @@ const questions = (state = {}, action) => {
             return { 
             	...state,
             	questions: action.questions,
-                keys: (action.questions).length,
-            	result: []
+            	updateUsers: [],
+                score: 0
             };
         case 'ANSWER_ACTION':
-            const newResult = [...state.result];
-            newResult[action.questionIndex] = action.answer;
+            const newAnswers = [...state.updateUsers];
+            newAnswers[action.questionIndex] = action.answer;
             return {
                 ...state,
-                result: [...newResult]
+                updateUsers: [...newAnswers]
+            }
+        case 'CLEAR_ANSWERS':
+            return {
+                ...state,
+                updateUsers: [],
+                score: 0
             }
         default:
             return state;
     }
 };
-
 
 const rootReducer = combineReducers({
     questions

@@ -30,7 +30,7 @@ const Welcome = () =>  {
         <div className={CommonStyles.container}>
             <VisibilityIcon color="action" />
             <Typography color="textPrimary" variant="h4">Welcome to fun quiz</Typography>
-            <Typography color="textSecondary" variant="subtitle1">Click on the below button to start quiz and have fun</Typography>
+            <Typography color="textSecondary" variant="subtitle1">Click on the below button to start quiz and have fun, Don't refresh in the middle of the quiz</Typography>
             <Button onClick={loadQuestions} variant="contained" color="primary">Start Quiz</Button>
         </div>
     );

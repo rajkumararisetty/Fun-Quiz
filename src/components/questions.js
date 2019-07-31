@@ -12,7 +12,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import CommonStyles from './common.module.css';
 import { questionSelector, totalQuestionsSelector, userAnswersSelector } from '../store/selectors';
-import { updateAnswers } from '../store/actions';
+import { updateUserAnswers } from '../store/actions';
 
 const Questions = ({match, history}) => {
     const urlParam = parseInt(match.params.id);
@@ -27,7 +27,7 @@ const Questions = ({match, history}) => {
 
     useEffect(() => {
         if (answer !== '') {
-            dispatch(updateAnswers(questionIndex, answer));
+            dispatch(updateUserAnswers(questionIndex, answer));
         } else {
             changeAnswer(get(userAnswers, urlParam - 1, ''));
         }
