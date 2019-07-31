@@ -1,0 +1,24 @@
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.answerGroup {
+    display: flex;
+    flex-direction: row !important;
+    width: 500px;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+
+.nextQuestionButton {
+    position: absolute !important;
+    top: 80%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: #fff !important;
+    background-color: #4caf50 !important;
+}
