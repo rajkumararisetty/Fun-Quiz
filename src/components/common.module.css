@@ -22,3 +22,12 @@
     color: #fff !important;
     background-color: #4caf50 !important;
 }
+
+.prevQuestionButton {
+    position: absolute !important;
+    top: 80%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: #fff !important;
+    background-color: #f44336 !important;
+}
